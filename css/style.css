@@ -1,0 +1,171 @@
+@font-face {
+    font-family: yusei;
+    src: url(../font/YuseiMagic-Regular.ttf);
+}
+
+@font-face{
+    font-family: agile;
+    src: url(../font/AgileSans-Regular.otf) format('opentype');
+}
+
+.nav-link {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.display-4{
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    color: #24282e;
+}
+.display-6{
+   font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #24282e;
+}
+.display-5{
+   font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #24282e;
+}
+.text-to{
+    opacity: 0.4;
+}
+header .display-4 span {
+    /* font-family: yusei; */
+    color: #0050d1;
+}
+
+header .display-6 span {
+    /* font-family: yusei; */
+    color: #0050d1;
+}
+
+ul > li.text-To {
+    list-style: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    color: #b1b1b1;
+    margin-top: 15px;
+}
+
+span.text-muted {
+    font-family: 'Assistant', sans-serif;
+}
+
+.sizeOver {
+    font-size: 24px;
+    margin-top: -8px;
+    color: #d1d1d1;
+    opacity: 0.4;
+}
+
+.button {
+    font-size: 16px;
+    padding : 12px 20px 12px 20px;
+}
+
+.fa-ukuran {
+    
+    font-size: 26px;
+}
+
+
+.fa-sosmed {
+    font-size: 27px;
+    opacity: 0.5;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 0.1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 0.1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+.logo {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+  }
+
+.logo{
+    /* Same as before */
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  }
+
+.logo {
+    /* Same as before */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+  }
+
+.logo, .btn{
+    /* Same as before */
+    transition: background-position 275ms ease;
+  }
+  .logo:hover {
+    background-position: 0 100%;
+  }
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #d2d2d2;
+    }
+  }
