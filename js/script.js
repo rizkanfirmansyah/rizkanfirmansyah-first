@@ -13,7 +13,11 @@ $(document).ready(function() {
   })
 
   function responsive(coba) {
-    if (coba < 576) {
+      let html = ` <button type="button" class="button btn btn-primary my-4 btn-lg">Try it Now <i class="bi bi-arrow-right"></i></button>
+      <button type="button" class="button btn btn-light my-4 btn-lg">Baca Selengkapnya</button>`
+      if (coba < 576) {
+        $('#buttonHeader').html(' ')
+        $('#buttonFluid').append(html)
         $('h1.display-4').addClass('display-6')
         $('h1.display-4').removeClass('display-4')
         $('h1.display-5').addClass('display-6')
@@ -28,6 +32,8 @@ $(document).ready(function() {
         $('.brand').addClass('mx-3')
         $('.keterangan').addClass('text-center')
     }else{
+        $('#buttonHeader').html(html)
+        $('#buttonFluid').html(' ')
         $('#headerJumbotron').addClass('my-4')
         $('#footerKeterangan').removeClass('text-center')
         $('h1.display-6').addClass('display-4')
